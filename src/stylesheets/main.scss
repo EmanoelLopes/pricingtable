@@ -1,0 +1,286 @@
+@import './reset';
+@import './variables';
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	color: $main-font-color;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	color: $color-primary;
+	font-size: $font-size-default - 2px;
+	text-decoration: none;
+}
+
+.business-plans {
+	z-index: $main-app;
+}
+
+.business-plans.fixed-header>.header {
+	height: 165px;
+	transition: all 300ms ease;
+}
+
+.business-plans.fixed-header>.header .plan-type.best-seller:before,
+.business-plans.fixed-header>.header .plan-type:nth-child(3):before {
+	top: 0px;
+	transition: all 300ms ease;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: url('https://trunk.me.com.br/do/Assets/Suppliers/dist/imagemhearder.png?b086a7200fccbd96494cae5c11f03f20') center center no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-color: $color-dark-blue;
+	border-bottom: 2px solid $color-light-grey;
+	height: 310px;
+	transition: all 300ms ease;
+	z-index: $fixed-header;
+	>.container {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		height: 100%;
+	}
+	&__choice-of-plans {
+		align-self: flex-end;
+		margin-bottom: 2rem;
+		width: 100%;
+		@include desktop {
+			width: 35%;
+		}
+	}
+	&__title {
+		color: $color-white;
+		font-size: $font-size-default + 8px;
+		font-weight: 600;
+		line-height: 1.25;
+		margin-bottom: 1rem;
+	}
+	&__commercial-plans {
+		display: flex;
+		flex-wrap: wrap;
+		background-color: $color-white;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		width: 100%;
+		@include desktop {
+			width: 65%;
+		}
+	}
+	.switch-plans {
+		display: flex;
+	}
+	.switch-plans-actions {
+		border: 3px solid $color-white;
+		border-radius: 15px;
+	}
+	.switch-plans-actions>.button {
+		background-color: transparent;
+		border: none;
+		border-radius: 15px;
+		color: $color-white;
+		cursor: pointer;
+		display: inline-block;
+		width: 80px;
+		height: 25px;
+		vertical-align: middle;
+	}
+	.switch-plans-actions>.button {
+		&.button-toggle-active {
+			background: linear-gradient(to right, $color-primary, $color-secondary);
+		}
+	}
+	.triangle-left {
+		position: relative;
+		left: -15px;
+		top: 5px;
+		width: 0;
+		height: 0;
+		border-top: 12px solid transparent;
+		border-right: 10px solid $color-alert;
+		border-bottom: 12px solid transparent;
+	}
+	.triangle-right {
+		position: relative;
+		left: -15px;
+		top: 5px;
+		width: 0;
+		height: 0;
+		border-top: 12px solid $color-alert;
+		border-right: 10px solid transparent;
+		border-bottom: 12px solid $color-alert;
+	}
+	.arrow-red-flag {
+		background-color: $color-alert;
+		color: $color-white;
+		display: inline-block;
+		font-size: $font-size-default - 4px;
+		height: 24px;
+		line-height: 24px;
+		padding: 0 1rem;
+		vertical-align: middle;
+		text-transform: uppercase;
+		position: relative;
+		left: -15px;
+		top: 5px;
+	}
+	.plan-type {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 25%;
+		padding: 2rem .25rem 1.25rem;
+	}
+	.plan-type.best-seller,
+	.plan-type:nth-child(3) {
+		color: $color-white;
+		background-color: $color-primary;
+	}
+	.plan-type.best-seller:before,
+	.plan-type:nth-child(3):before {
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		content: "Mais vendido";
+		font-size: $font-size-default - 6px;
+		font-weight: bold;
+		position: absolute;
+		top: -20px;
+		right: 0;
+		left: 0;
+		padding: 1rem 0 0;
+		color: $color-white;
+		background-color: $color-primary;
+		text-align: center;
+		text-transform: uppercase;
+		transition: all 300ms ease;
+	}
+	.plan-type>h3,
+	.plan-type>span {
+		margin-bottom: 1rem;
+	}
+	.plan-type>h3 {
+		font-size: $font-size-default + 4;
+	}
+	.plan-type-call-to-action {
+		background-color: $color-action;
+		border: none;
+		border-radius: 2px;
+		box-shadow: 1px 1px 1px #ddd;
+		color: $color-white;
+		cursor: pointer;
+		font-weight: 500;
+		padding: .5rem 1rem;
+		transition: .3s ease all;
+		&:hover {
+			box-shadow: 5px 5px 5px $color-dark-blue;
+			transition: .3s ease all;
+		}
+	}
+	.plan-type.best-seller>.plan-type-call-to-action,
+	.plan-type:nth-child(3)>.plan-type-call-to-action {
+		background-color: $color-white;
+		border: none;
+		color: $color-primary;
+	}
+	.plan-type .plan-type-value>span {
+		font-size: $font-size-default - 2px;
+	}
+	.plan-type .plan-type-value .value>strong {
+		font-size: $font-size-default + 8px;
+		font-weight: 700;
+	}
+}
+
+.main {
+	margin-top: 310px;
+	.plan-row {
+		display: flex;
+		border-bottom: 2px solid $color-light-grey;
+		&:hover {
+			background-color: $cell-hover-color;
+		}
+		&:last-child {
+			border: none;
+		}
+		&__description {
+			width: 35%;
+			padding: 1rem;
+			>span,
+			>i {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			>i {
+				font-size: $font-size-default + 2;
+			}
+			>a>i {
+				font-size: $font-size-default - 2px;
+				vertical-align: middle;
+			}
+		}
+		&__table {
+			display: flex;
+			width: 65%;
+			text-align: center;
+		}
+		&__table-cell {
+			width: 25%;
+			padding: 1rem 0;
+			font-weight: 600;
+		}
+		&__table-cell:nth-child(3) {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+		&__table-cell .material-icons {
+			font-size: $font-size-default;
+			color: $color-secondary;
+		}
+		&__table-cell:nth-child(3) .material-icons {
+			color: $color-white;
+		}
+		&__table-cell small {
+			font-size: $font-size-default - 4px;
+		}
+	}
+}
+
+.footer {
+	color: $color-light-grey;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.modal-overlay {
+	background-color: rgba(0, 0, 0, .225);
+	&.is-opened {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: $modal-overlay;
+	}
+}
+
+.modal-overlay,
+.modal-container {
+	display: none;
+}

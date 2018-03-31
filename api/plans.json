@@ -1,0 +1,125 @@
+{
+	"plans": [{
+			"type": "Free",
+			"value": 0
+		},
+		{
+			"type": "Basic",
+			"value": 289
+		},
+		{
+			"type": "Plus",
+			"value": 399
+		},
+		{
+			"type": "Premium",
+			"value": 899
+		}
+	],
+	"featuresPerPlan": [{
+			"description": "Responder cotações",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Responder pedidos",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Candidatar-se a cotações",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Fup Eletrônico",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Exposição no MarketPlace",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Suporte",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Cadastro",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Verificação de cadastro",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Extrato de Transações",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Cotações públicas",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "MarketPlace Ativo",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "CRM de vendas com WF de usuários",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Indicações e Fup ativo",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Analytics",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		},
+		{
+			"description": "Video de produtos / mkt no ME",
+			"free": "Básico",
+			"basic": "<i class='material-icons'>check_circle</i>",
+			"plus": "<i class='material-icons'>check_circle</i>",
+			"premium": "<i class='material-icons'>check_circle</i>"
+		}
+	]
+}

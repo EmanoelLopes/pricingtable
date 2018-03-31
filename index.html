@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body>
+		<div id="root">
+			<div id="BusinessPlans" class="business-plans">
+				<header class="header" id="headerSection">
+					<div class="container">
+						<div class="header__choice-of-plans">
+							<h2 class="header__title">
+								Escolha o plano ideal
+								<br> para a sua empresa
+							</h2>
+							<div class="switch-plans">
+								<div class="switch-plans-actions">
+									<button class="button button-toggle-active" id="planPerMonth">Mensal</button>
+									<button class="button" id="planPerYear">Anual</button>
+								</div>
+								<span class="triangle-left"></span>
+								<span class="arrow-red-flag">1 mês grátis</span>
+								<span class="triangle-right"></span>
+							</div>
+						</div>
+
+						<!-- Plans Types -->
+						<div class="header__commercial-plans" data-plans="plans-types"></div>
+						<!-- Plans Types -->
+					</div>
+				</header>
+				<!-- Plans Features -->
+				<section class="main" id="bodySection">
+					<div class="container" data-plans="plans-rows"></div>
+				</section>
+				<!--/ Plans Features -->
+			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<p class="text-muted">* Contratação de extras não disponível no plano Free</p>
+				</div>
+			</footer>
+
+			<div class="modal-overlay"></div>
+			<div class="modal-container">
+				<div>Some Content Here</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,811 @@
+{
+	"$id": "1",
+	"planos": [{
+			"$id": "2",
+			"id": 23,
+			"descricao": "FREE",
+			"valor": 0.0
+		},
+		{
+			"$id": "3",
+			"id": 24,
+			"descricao": "BASIC",
+			"valor": 0.0
+		},
+		{
+			"$id": "4",
+			"id": 25,
+			"descricao": "PLUS",
+			"valor": 0.0
+		},
+		{
+			"$id": "5",
+			"id": 26,
+			"descricao": "PREMIUM",
+			"valor": 0.0
+		}
+	],
+	"caracteristicas": [{
+			"$id": "6",
+			"descricao": "Responder Cotações",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "7",
+					"plano": {
+						"$id": "8",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Ilimitado"
+				},
+				{
+					"$id": "9",
+					"plano": {
+						"$id": "10",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Ilimitado"
+				},
+				{
+					"$id": "11",
+					"plano": {
+						"$id": "12",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Ilimitado"
+				},
+				{
+					"$id": "13",
+					"plano": {
+						"$id": "14",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Ilimitado"
+				}
+			]
+		},
+		{
+			"$id": "15",
+			"descricao": "Responder pedidos recebidos direto do cliente",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "16",
+					"plano": {
+						"$id": "17",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Ilimitado"
+				},
+				{
+					"$id": "18",
+					"plano": {
+						"$id": "19",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Ilimitado"
+				},
+				{
+					"$id": "20",
+					"plano": {
+						"$id": "21",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Ilimitado"
+				},
+				{
+					"$id": "22",
+					"plano": {
+						"$id": "23",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Ilimitado"
+				}
+			]
+		},
+		{
+			"$id": "24",
+			"descricao": "Cadastro da sua empresa",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "25",
+					"plano": {
+						"$id": "26",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Básico"
+				},
+				{
+					"$id": "27",
+					"plano": {
+						"$id": "28",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Intermediário (Contato/Palavra chave/Logo/Produtos)"
+				},
+				{
+					"$id": "29",
+					"plano": {
+						"$id": "30",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Completo (Produtos e Fotos)"
+				},
+				{
+					"$id": "31",
+					"plano": {
+						"$id": "32",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Completo (Produtos e Fotos)"
+				}
+			]
+		},
+		{
+			"$id": "33",
+			"descricao": "Prioridade na Exposição no Marketplace",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "34",
+					"plano": {
+						"$id": "35",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Free"
+				},
+				{
+					"$id": "36",
+					"plano": {
+						"$id": "37",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Basic"
+				},
+				{
+					"$id": "38",
+					"plano": {
+						"$id": "39",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Plus"
+				},
+				{
+					"$id": "40",
+					"plano": {
+						"$id": "41",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Premium"
+				}
+			]
+		},
+		{
+			"$id": "42",
+			"descricao": "Se candidatar à cotações",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "43",
+					"plano": {
+						"$id": "44",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "0"
+				},
+				{
+					"$id": "45",
+					"plano": {
+						"$id": "46",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "10 candidaturas ativas"
+				},
+				{
+					"$id": "47",
+					"plano": {
+						"$id": "48",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "15 candidaturas ativas"
+				},
+				{
+					"$id": "49",
+					"plano": {
+						"$id": "50",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "30 candidaturas ativas"
+				}
+			]
+		},
+		{
+			"$id": "51",
+			"descricao": "Cadastro de palavra chave",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "52",
+					"plano": {
+						"$id": "53",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "0"
+				},
+				{
+					"$id": "54",
+					"plano": {
+						"$id": "55",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "10"
+				},
+				{
+					"$id": "56",
+					"plano": {
+						"$id": "57",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "25"
+				},
+				{
+					"$id": "58",
+					"plano": {
+						"$id": "59",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "50"
+				}
+			]
+		},
+		{
+			"$id": "60",
+			"descricao": "Receber Follow-up eletrônico",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "61",
+					"plano": {
+						"$id": "62",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "63",
+					"plano": {
+						"$id": "64",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "65",
+					"plano": {
+						"$id": "66",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "67",
+					"plano": {
+						"$id": "68",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "69",
+			"descricao": "Suporte Técnico",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "70",
+					"plano": {
+						"$id": "71",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "72",
+					"plano": {
+						"$id": "73",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "74",
+					"plano": {
+						"$id": "75",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "76",
+					"plano": {
+						"$id": "77",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "78",
+			"descricao": "Exibição da logomarca da empresa no Marketplace",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "79",
+					"plano": {
+						"$id": "80",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "81",
+					"plano": {
+						"$id": "82",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "83",
+					"plano": {
+						"$id": "84",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "85",
+					"plano": {
+						"$id": "86",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "87",
+			"descricao": "Verificação de Cadastro",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "88",
+					"plano": {
+						"$id": "89",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "90",
+					"plano": {
+						"$id": "91",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "92",
+					"plano": {
+						"$id": "93",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "94",
+					"plano": {
+						"$id": "95",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "96",
+			"descricao": "Acessar Dashboard e Indicadores de Performance",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "97",
+					"plano": {
+						"$id": "98",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "99",
+					"plano": {
+						"$id": "100",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "101",
+					"plano": {
+						"$id": "102",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "103",
+					"plano": {
+						"$id": "104",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "105",
+			"descricao": "Link para website da sua empresa",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "106",
+					"plano": {
+						"$id": "107",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "108",
+					"plano": {
+						"$id": "109",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "110",
+					"plano": {
+						"$id": "111",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "112",
+					"plano": {
+						"$id": "113",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "114",
+			"descricao": "Encontrar oportunidades para se candidatar à cotações",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "115",
+					"plano": {
+						"$id": "116",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "117",
+					"plano": {
+						"$id": "118",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "119",
+					"plano": {
+						"$id": "120",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "121",
+					"plano": {
+						"$id": "122",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "123",
+			"descricao": "Acessar oportunidades públicas do Marketplace",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "124",
+					"plano": {
+						"$id": "125",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "126",
+					"plano": {
+						"$id": "127",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "128",
+					"plano": {
+						"$id": "129",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "130",
+					"plano": {
+						"$id": "131",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "132",
+			"descricao": "Exibição de produtos com foto",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "133",
+					"plano": {
+						"$id": "134",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "135",
+					"plano": {
+						"$id": "136",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "137",
+					"plano": {
+						"$id": "138",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "139",
+					"plano": {
+						"$id": "140",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "141",
+			"descricao": "Botão entre em contato",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "142",
+					"plano": {
+						"$id": "143",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "144",
+					"plano": {
+						"$id": "145",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "146",
+					"plano": {
+						"$id": "147",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "148",
+					"plano": {
+						"$id": "149",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		},
+		{
+			"$id": "150",
+			"descricao": "Link para redes sociais da sua empresa (Facebook e LinkedIn)",
+			"toolTip": null,
+			"caracteristicasPlanos": [{
+					"$id": "151",
+					"plano": {
+						"$id": "152",
+						"id": 23,
+						"descricao": "FREE",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "153",
+					"plano": {
+						"$id": "154",
+						"id": 24,
+						"descricao": "BASIC",
+						"valor": 0.0
+					},
+					"descricao": "Não"
+				},
+				{
+					"$id": "155",
+					"plano": {
+						"$id": "156",
+						"id": 25,
+						"descricao": "PLUS",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				},
+				{
+					"$id": "157",
+					"plano": {
+						"$id": "158",
+						"id": 26,
+						"descricao": "PREMIUM",
+						"valor": 0.0
+					},
+					"descricao": "Sim"
+				}
+			]
+		}
+	]
+}

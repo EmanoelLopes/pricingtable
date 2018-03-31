@@ -1,0 +1,34 @@
+/* Variables */
+
+//Theme Colors
+$color-white: #fff;
+$color-primary: #16BAE4;
+$color-secondary: #2bd0bc;
+$color-dark-blue: #05364e;
+$color-light-grey: #ddd;
+$color-action: #0a8ccc;
+$color-alert: #C70726;
+
+//Spefic colors
+$main-font-color: #454545;
+$cell-hover-color: rgba(10, 140, 204, .114454545);
+
+//font-size
+$font-size-default: 16px;
+
+//Z-index
+$main-app: 100;
+$fixed-header: 30;
+$modal-overlay: 10;
+$modal-content: 20;
+
+/* Breakpoints */
+$desktop-width: 1024px;
+
+/* Mixins */
+@mixin desktop {
+	@media screen and (min-width: $desktop-width) {
+		@content;
+	}
+}
+
