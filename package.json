@@ -6,7 +6,7 @@
   "scripts": {
     "start": "yarn run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "build": "NODE_ENV=production webpack --progress --hide-modules",
     "server-prod": "yarn run build && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "fix": "eslint init --fix src/**/*.js",
