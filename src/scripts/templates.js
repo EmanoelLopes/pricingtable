@@ -62,8 +62,11 @@ export const pricingRow = (tooltip, description, free, basic, plus, premium) => 
 	`;
 };
 
-export const noPlans = `
+export const emptyPlans = () => {
+	return `
 		<div class="plan-row">
 			<p class="no-plans">Não há planos a serem exibidos.</p>
 		</div>
 	`;
+};
+

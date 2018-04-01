@@ -1,5 +1,5 @@
-import { pricingRow, noPlans, plansTypesAndAmount } from './templates';
-import { plansRows, plansTypes } from './constants';
+import { pricingRow, emptyPlans, plansTypesAndAmount } from './templates';
+import { plansRows, plansTypes, modalOverlay } from './constants';
 import 'isomorphic-fetch';
 import Promise from 'promise-polyfill';
 
@@ -33,11 +33,23 @@ export default class Plans {
 			sibling.setAttribute('data-active', false);
 			element.classList.add(this.activeToggleClass);
 			element.setAttribute('data-active', true);
-
 			e.target.id === 'planPerYear'
 				? this._amountValues.map((value, index) => { value.textContent = this.planValues.perYear[index]; })
 				: this._amountValues.map((value, index) => { value.textContent = this.planValues.perMonth[index]; });
 		});
+	}
+
+	showTermsAndConditionalsDialog(element) {
+		return {
+			open: () => {
+				document.body.classList.add('modal-open');
+				element.classList.add('show-dialog');
+			},
+			close: () => {
+				document.body.classList.remove('modal-open');
+				element.classList.remove('show-dialog');
+			}
+		};
 	}
 
 	renderPlansRows() {
@@ -53,7 +65,7 @@ export default class Plans {
 		fetch(endpoint, config)
 			.then((response) => {
 				(!response.ok)
-					? plansRows.innerHTML = noPlans
+					? plansRows.innerHTML = emptyPlans()
 					: response.json().then((data) => {
 
 						const plansData = data.planos.map((plan, index) => {
@@ -69,6 +81,18 @@ export default class Plans {
 
 						plansTypes.innerHTML = plansData;
 						plansRows.innerHTML = rowData;
+
+						const signInButtons = [].slice.call(document.querySelectorAll('[data-target="termsAndConditionsDialog"]'));
+
+						signInButtons.map((button) => {
+							button.addEventListener('click', () => {
+								this.showTermsAndConditionalsDialog(modalOverlay).open();
+							});
+						});
+
+						modalOverlay.addEventListener('click', () => {
+							this.showTermsAndConditionalsDialog(modalOverlay).close();
+						});
 					});
 			})
 			.catch((err) => {

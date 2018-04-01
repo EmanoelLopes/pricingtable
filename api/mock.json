@@ -139,7 +139,7 @@
 						"descricao": "BASIC",
 						"valor": 0.0
 					},
-					"descricao": "Intermediário (Contato/Palavra chave/Logo/Produtos)"
+					"descricao": "Intermediário <br> (Contato/Palavra chave/Logo/Produtos)"
 				},
 				{
 					"$id": "29",
@@ -149,7 +149,7 @@
 						"descricao": "PLUS",
 						"valor": 0.0
 					},
-					"descricao": "Completo (Produtos e Fotos)"
+					"descricao": "Completo <br> (Produtos e Fotos)"
 				},
 				{
 					"$id": "31",
@@ -159,7 +159,7 @@
 						"descricao": "PREMIUM",
 						"valor": 0.0
 					},
-					"descricao": "Completo (Produtos e Fotos)"
+					"descricao": "Completo <br> (Produtos e Fotos)"
 				}
 			]
 		},

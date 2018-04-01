@@ -11,6 +11,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+body.modal-open {
+	overflow-y: hidden;
+}
+
 a {
 	color: $color-primary;
 	font-size: $font-size-default - 2px;
@@ -42,7 +46,6 @@ a {
 	top: 0;
 	left: 0;
 	right: 0;
-	background: url('https://trunk.me.com.br/do/Assets/Suppliers/dist/imagemhearder.png?b086a7200fccbd96494cae5c11f03f20') center center no-repeat;
 	background-size: cover;
 	background-attachment: scroll;
 	background-color: $color-dark-blue;
@@ -241,9 +244,10 @@ a {
 			text-align: center;
 		}
 		&__table-cell {
-			width: 25%;
-			padding: 1rem 0;
+			font-size: 14px;
 			font-weight: 600;
+			width: 25%;
+			padding: 1rem .5rem;
 		}
 		&__table-cell:nth-child(3) {
 			background-color: $color-primary;
@@ -268,9 +272,11 @@ a {
 	text-align: center;
 }
 
-.modal-overlay {
-	background-color: rgba(0, 0, 0, .225);
-	&.is-opened {
+
+.modal-backdrop {
+	background-color: rgba(0, 0, 0, .5);
+	&.show-dialog {
+		display: block;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -280,7 +286,29 @@ a {
 	}
 }
 
-.modal-overlay,
 .modal-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
 	display: none;
+	overflow: hidden;
+	outline: 0;
 }
+
+.modal-backdrop.show-dialog+.modal-container {
+	display: block;
+}
+
+.modal-dialog {
+	max-width: 648px;
+	margin: 1.75rem auto;
+}
+
+.modal-content {
+	background-color: $color-white;
+	padding: 1rem;
+}
+
