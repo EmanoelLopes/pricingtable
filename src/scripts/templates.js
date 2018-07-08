@@ -20,14 +20,16 @@ export const plansTypesAndAmount = (planType, value, bestSeller = false) => {
 };
 
 export const pricingRow = (tooltip, description, free, basic, plus, premium) => {
+	const empty = '';
+
 	function checkCircle(item) {
 		if(item.toLowerCase().indexOf('sim') > -1) {
 			return '<i class="material-icons">check_circle</i>';
 		} else if (item.toLowerCase().indexOf('não') > -1) {
-			return '';
-		} else {
-			return item;
+			return empty;
 		}
+
+		return item;
 	}
 
 	return `
