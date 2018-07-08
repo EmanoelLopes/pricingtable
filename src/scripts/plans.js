@@ -1,5 +1,5 @@
 import { pricingRow, emptyPlans, plansTypesAndAmount } from './templates';
-import { plansRows, plansTypes, modalOverlay } from './constants';
+import { plansRows, plansTypes, modalOverlay, modalCloseButton } from './constants';
 import 'isomorphic-fetch';
 import Promise from 'promise-polyfill';
 
@@ -76,7 +76,14 @@ export default class Plans {
 						const rowData = data.caracteristicas.map((item) => {
 							// This is bad but, its for now
 							/* @TODO: Refeactor this part of code */
-							return pricingRow(item.toolTip, item.descricao, item.caracteristicasPlanos[0].descricao, item.caracteristicasPlanos[1].descricao, item.caracteristicasPlanos[2].descricao, item.caracteristicasPlanos[3].descricao);
+							return pricingRow(
+								item.toolTip, 
+								item.descricao, 
+								item.caracteristicasPlanos[0].descricao, 
+								item.caracteristicasPlanos[1].descricao, 
+								item.caracteristicasPlanos[2].descricao, 
+								item.caracteristicasPlanos[3].descricao
+							);
 						}).join('');
 
 						plansTypes.innerHTML = plansData;
@@ -91,6 +98,10 @@ export default class Plans {
 						});
 
 						modalOverlay.addEventListener('click', () => {
+							this.showTermsAndConditionalsDialog(modalOverlay).close();
+						});
+
+						modalCloseButton.addEventListener('click', () => {
 							this.showTermsAndConditionalsDialog(modalOverlay).close();
 						});
 					});

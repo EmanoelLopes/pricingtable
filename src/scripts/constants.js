@@ -11,7 +11,7 @@ export const activeToggleClass = 'button-toggle-active';
 /* Terms and Conditions */
 export const modalOverlay = document.querySelector('.modal-backdrop');
 export const modalDialog = document.querySelector('.modal-dialog');
-export const modalCloseButton = document.querySelector('.modal-close');
+export const modalCloseButton = document.querySelector('.modal-dialog .close');
 
 /* Inital State */
 export const initialValues = [0, 289, 399, 899];

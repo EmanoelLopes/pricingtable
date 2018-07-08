@@ -12,7 +12,15 @@ import {
 import '../stylesheets/main.scss';
 
 // Plans instance
-const plans = new Plans(actionsPlans, amountValues, planPerMonth, planPerYear, activeToggleClass, initialValues, planValues);
+const plans = new Plans(
+	actionsPlans, 
+	amountValues, 
+	planPerMonth, 
+	planPerYear, 
+	activeToggleClass, 
+	initialValues, 
+	planValues
+);
 
 // Scroll Helper
 HELPERS.fixHeaderOnScroll(businessPlans);
