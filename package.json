@@ -4,13 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "yarn run dev",
+    "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "server-prod": "yarn run build && node server.js",
+    "build": "npm run clean:dist && cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "serve:prod": "npm run build && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fix": "eslint init --fix src/**/*.js",
-    "clean": "rm -rf node_modules"
+    "fix": "node_modules/.bin/eslint init --fix src/**/*.js",
+    "clean:node_modules": "rm -rf node_modules",
+    "clean:dist": "rm -rf dist"
   },
   "author": "Emanoel Lopes",
   "license": "ISC",

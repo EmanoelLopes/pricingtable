@@ -53,7 +53,7 @@ export default class Plans {
 	}
 
 	renderPlansRows() {
-		const endpoint = '../../api/mock.json';
+		const endpoint = 'http://private-b82ad-pricingtable.apiary-mock.com/pricing';
 		const headers = new Headers();
 		headers.set('Content-Type', 'application/json');
 		const config = {
